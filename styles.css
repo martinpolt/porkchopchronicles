@@ -1,0 +1,428 @@
+/* The Pork Chop Chronicles - Professional Food Blog Design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-warm: #8b4513;
+    --primary-dark: #5d2e0c;
+    --accent-gold: #c9a227;
+    --accent-copper: #b87333;
+    --cream: #faf8f5;
+    --warm-white: #fffef9;
+    --text-dark: #2d2a26;
+    --text-medium: #5a5651;
+    --text-light: #8a8580;
+    --border-subtle: #e8e4df;
+    --shadow-soft: rgba(45, 42, 38, 0.08);
+    --shadow-medium: rgba(45, 42, 38, 0.12);
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--cream);
+    color: var(--text-dark);
+    line-height: 1.85;
+    font-size: 17px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+}
+
+/* Header */
+header {
+    background: var(--warm-white);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-warm);
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+header .subtitle {
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--text-medium);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--warm-white);
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--text-medium);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: var(--primary-warm);
+}
+
+nav a.active {
+    color: var(--primary-warm);
+    border-bottom-color: var(--accent-gold);
+}
+
+/* Main Content */
+main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+/* Article Styling */
+article {
+    background: var(--warm-white);
+    border-radius: 4px;
+    padding: 3rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 1px 3px var(--shadow-soft);
+    border: 1px solid var(--border-subtle);
+}
+
+article h2 {
+    color: var(--primary-warm);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+article h3 {
+    color: var(--primary-dark);
+    font-size: 1.35rem;
+    margin: 2.5rem 0 1.2rem;
+}
+
+article p {
+    margin-bottom: 1.4rem;
+    color: var(--text-dark);
+}
+
+/* Section Title on Home Page */
+.section-title {
+    text-align: center;
+    color: var(--primary-warm);
+    font-size: 1.6rem;
+    margin: 2.5rem 0 2rem;
+    font-weight: normal;
+}
+
+/* Review Cards on Home Page */
+.review-card {
+    background: var(--warm-white);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px var(--shadow-soft);
+    border: 1px solid var(--border-subtle);
+    transition: box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.review-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.review-card-content {
+    padding: 1.75rem 2rem;
+}
+
+.review-card h3 {
+    color: var(--primary-warm);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-card .meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.review-card .excerpt {
+    margin-bottom: 1.25rem;
+    color: var(--text-medium);
+}
+
+.review-card .read-more {
+    display: inline-block;
+    color: var(--primary-warm);
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--accent-gold);
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+}
+
+.review-card .read-more:hover {
+    color: var(--primary-dark);
+    border-bottom-color: var(--primary-dark);
+}
+
+/* Rating Display */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.25rem 0;
+}
+
+.rating .score {
+    background: var(--accent-gold);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+}
+
+.rating .price-tag {
+    background: var(--cream);
+    color: var(--text-medium);
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    border: 1px solid var(--border-subtle);
+}
+
+/* Info Box */
+.info-box {
+    background: var(--cream);
+    border-left: 3px solid var(--accent-gold);
+    padding: 1.25rem 1.5rem;
+    margin: 1.75rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.info-box p {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    color: var(--text-medium);
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+.info-box strong {
+    color: var(--primary-dark);
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    opacity: 0.95;
+}
+
+.single-photo {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+/* Author Portrait */
+.author-portrait {
+    float: right;
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin: 0 0 1.5rem 2rem;
+    box-shadow: 0 2px 8px var(--shadow-medium);
+}
+
+@media (max-width: 600px) {
+    .author-portrait {
+        float: none;
+        display: block;
+        width: 160px;
+        margin: 0 auto 1.5rem auto;
+    }
+}
+
+/* Intro Highlight / Pull Quote */
+.intro-highlight {
+    font-size: 1.15rem;
+    color: var(--text-medium);
+    font-style: italic;
+    border-left: 3px solid var(--accent-gold);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    line-height: 1.9;
+}
+
+/* Verdict Section */
+.verdict {
+    background: linear-gradient(135deg, var(--primary-warm) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 4px;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.verdict h3 {
+    color: white;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.verdict p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: var(--primary-warm);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Footer */
+footer {
+    background: var(--text-dark);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
+
+footer .heart {
+    color: var(--accent-copper);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 0.25rem 1.25rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    article {
+        padding: 2rem 1.5rem;
+    }
+
+    article h2 {
+        font-size: 1.6rem;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    article {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .rating {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
