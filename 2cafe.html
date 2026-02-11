@@ -7,74 +7,108 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>The Pork Chop Chronicles</h1>
-        <p class="subtitle">One Frenchman's Quest for the Perfect Baked Pork Chop Tomato Rice in Hong Kong</p>
-    </header>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <h1>The Pork Chop Chronicles</h1>
+                <p class="tagline">One Frenchman's Quest for the Perfect Baked Pork Chop Rice in Hong Kong</p>
+            </a>
+        </div>
+        <div class="sidebar-nav">
+            <p class="nav-section-label">Navigate</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">My Story</a></li>
+            </ul>
+            <p class="nav-section-label">Reviews</p>
+            <ul>
+                <li><a href="red-tea.html">Red Tea</a></li>
+                <li><a href="2cafe.html" class="active">2 Cafe</a></li>
+                <li><a href="cafe-de-coral.html">Cafe De Coral</a></li>
+                <li><a href="kowloon-restaurant.html">Kowloon Restaurant</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <p>Made with <span class="heart">&hearts;</span> and far too much tomato sauce in Hong Kong</p>
+        </div>
+    </aside>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">My Story</a></li>
-            <li><a href="red-tea.html">Red Tea</a></li>
-            <li><a href="2cafe.html" class="active">2 Cafe</a></li>
-            <li><a href="cafe-de-coral.html">Cafe De Coral</a></li>
-        </ul>
-    </nav>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+    </button>
+    <div class="overlay" id="overlay"></div>
 
-    <main>
-        <article>
-            <h2>2 Cafe - Sheung Wan</h2>
+    <!-- Content Area -->
+    <div class="content-area">
+        <main>
+            <article>
+                <h2>2 Cafe - Sheung Wan</h2>
 
-            <div class="rating">
-                <span class="score">7/10</span>
-                <span class="price-tag">HK$70</span>
-            </div>
+                <div class="rating">
+                    <span class="score">7/10</span>
+                    <span class="price-tag">HK$70</span>
+                </div>
 
-            <div class="info-box">
-                <p><strong>Address:</strong> Bonham Strand 16-20號, Gee Tuck Building, 地下, Sheung Wan</p>
-                <p><strong>Date of Visit:</strong> January 15, 2026</p>
-                <p><strong>Damage:</strong> HK$70</p>
-            </div>
+                <div class="info-box">
+                    <p><strong>Address:</strong> Bonham Strand 16-20號, Gee Tuck Building, 地下, Sheung Wan</p>
+                    <p><strong>Date of Visit:</strong> January 15, 2026</p>
+                    <p><strong>Damage:</strong> HK$70</p>
+                </div>
 
-            <img src="images/2cafe.jpg" alt="2 Cafe Baked Pork Chop Rice" class="single-photo">
+                <img src="images/2cafe.jpg" alt="2 Cafe Baked Pork Chop Rice" class="single-photo">
 
-            <h3>The Review</h3>
+                <h3>The Review</h3>
 
-            <p>Sheung Wan is one of those neighborhoods that rewards the curious. Wander off the main roads, duck into the older buildings, and you'll find all sorts of treasures hiding in plain sight. 2 Cafe is exactly that kind of discovery, tucked away in the Gee Tuck Building on Bonham Strand - bit off the beaten path.</p>
+                <p>Sheung Wan is one of those neighborhoods that rewards the curious. Wander off the main roads, duck into the older buildings, and you'll find all sorts of treasures hiding in plain sight. 2 Cafe is exactly that kind of discovery, tucked away in the Gee Tuck Building on Bonham Strand - bit off the beaten path.</p>
 
-            <p>I stumbled upon this place during one of my weekend wandering sessions (a hobby I highly recommend - Hong Kong always has something new to show you). Also known as 貳號冰室, 2 Cafe has been making waves in the local food scene, and once you step inside, you'll immediately understand why.</p>
+                <p>I stumbled upon this place during one of my weekend wandering sessions (a hobby I highly recommend - Hong Kong always has something new to show you). Also known as 貳號冰室, 2 Cafe has been making waves in the local food scene, and once you step inside, you'll immediately understand why.</p>
 
-            <p>Here's the thing that sets 2 Cafe apart from your typical cha chaan teng: the decor is genuinely charming. Instead of the usual harsh fluorescent lighting and plastic furniture, you're greeted by a warm color palette of soft greens and beiges, rounded furniture with smooth edges that give the whole place a retro-modern vibe. It's the kind of design that makes you want to linger over your milk tea. And on one wall, there's this lovely painting of Hong Kong, one of those nostalgic urban scenes that makes you appreciate this city's character. It's a small touch, but it shows someone actually thought about the experience here, not just the food.</p>
+                <p>Here's the thing that sets 2 Cafe apart from your typical cha chaan teng: the decor is genuinely charming. Instead of the usual harsh fluorescent lighting and plastic furniture, you're greeted by a warm color palette of soft greens and beiges, rounded furniture with smooth edges that give the whole place a retro-modern vibe. It's the kind of design that makes you want to linger over your milk tea. And on one wall, there's this lovely painting of Hong Kong, one of those nostalgic urban scenes that makes you appreciate this city's character. It's a small touch, but it shows someone actually thought about the experience here, not just the food.</p>
 
-            <p>But we're not here for the ambiance (as delightful as it is). We're here for the pork chop.</p>
+                <p>But we're not here for the ambiance (as delightful as it is). We're here for the pork chop.</p>
 
-            <p class="intro-highlight">And oh, what a pork chop it is. The portion is genuinely enormous. I consider myself someone with a healthy appetite (read: I can eat), and even I found myself staring at this plate wondering if I'd bitten off more than I could chew. Literally.</p>
+                <p class="intro-highlight">And oh, what a pork chop it is. The portion is genuinely enormous. I consider myself someone with a healthy appetite (read: I can eat), and even I found myself staring at this plate wondering if I'd bitten off more than I could chew. Literally.</p>
 
-            <p>The real revelation here, though, is the crispy burnt edges on the pork. Before 2 Cafe, I'd always thought of the breading as something that should be uniformly golden. This place proved me wrong. Those slightly charred bits around the edges? They add this incredible depth of flavor, a touch of bitterness that balances the sweetness of the tomato sauce, an extra crunch that contrasts with the tender meat.</p>
+                <p>The real revelation here, though, is the crispy burnt edges on the pork. Before 2 Cafe, I'd always thought of the breading as something that should be uniformly golden. This place proved me wrong. Those slightly charred bits around the edges? They add this incredible depth of flavor, a touch of bitterness that balances the sweetness of the tomato sauce, an extra crunch that contrasts with the tender meat.</p>
 
-            <p>I never knew I wanted my pork chop slightly burnt until I had it. Now I can't go back. This is the culinary equivalent of discovering that you've been living your whole life without knowing about a better way. It's unsettling and wonderful at the same time.</p>
+                <p>I never knew I wanted my pork chop slightly burnt until I had it. Now I can't go back. This is the culinary equivalent of discovering that you've been living your whole life without knowing about a better way. It's unsettling and wonderful at the same time.</p>
 
-            <p>The rice and sauce are solid. Nothing groundbreaking, but they do their job competently. This is very much a pork-chop-forward establishment, and they've clearly put their energy into getting that element right. They also do a respectable breakfast menu (including something called the "CFO breakfast" which I'm now obligated to try) and their scrambled eggs have earned praise from more discerning palates than mine.</p>
+                <p>The rice and sauce are solid. Nothing groundbreaking, but they do their job competently. This is very much a pork-chop-forward establishment, and they've clearly put their energy into getting that element right. They also do a respectable breakfast menu (including something called the "CFO breakfast" which I'm now obligated to try) and their scrambled eggs have earned praise from more discerning palates than mine.</p>
 
-            <p>Fair warning: service here is efficient in that very Hong Kong way, which is to say, don't expect lingering. They'll feed you well, but they'll also gently encourage you to make room for the lunch crowd. It's not rude, it's just... purposeful. Embrace it.</p>
+                <p>Fair warning: service here is efficient in that very Hong Kong way, which is to say, don't expect lingering. They'll feed you well, but they'll also gently encourage you to make room for the lunch crowd. It's not rude, it's just... purposeful. Embrace it.</p>
 
-            <p>The only other downside? By the time I finished (and yes, I did finish - my French grandmother didn't raise a quitter), I needed to seriously reconsider my dinner plans. This is a one-meal-a-day kind of portion.</p>
+                <p>The only other downside? By the time I finished (and yes, I did finish - my French grandmother didn't raise a quitter), I needed to seriously reconsider my dinner plans. This is a one-meal-a-day kind of portion.</p>
 
-            <h3>The Verdict</h3>
+                <h3>The Verdict</h3>
 
-            <div class="verdict">
-                <h3>The Crispy Edge Convert</h3>
-                <p>2 Cafe taught me something new about a dish I thought I knew inside out. For that alone, it earns its place in the chronicles. Come hungry. Very hungry.</p>
-            </div>
+                <div class="verdict">
+                    <h3>The Crispy Edge Convert</h3>
+                    <p>2 Cafe taught me something new about a dish I thought I knew inside out. For that alone, it earns its place in the chronicles. Come hungry. Very hungry.</p>
+                </div>
 
-            <a href="index.html" class="back-link">← Back to All Reviews</a>
-        </article>
-    </main>
+                <a href="index.html" class="back-link">&larr; Back to All Reviews</a>
+            </article>
+        </main>
 
-    <footer>
-        <p>Made with <span class="heart">♥</span> and far too much tomato sauce in Hong Kong</p>
-        <p>© 2026 The Pork Chop Chronicles</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 The Pork Chop Chronicles</p>
+        </footer>
+    </div>
+
+    <script>
+    (function() {
+        var t = document.getElementById('menuToggle');
+        var s = document.getElementById('sidebar');
+        var o = document.getElementById('overlay');
+        function close() { s.classList.remove('open'); o.classList.remove('open'); t.classList.remove('open'); }
+        t.addEventListener('click', function() {
+            if (s.classList.contains('open')) { close(); }
+            else { s.classList.add('open'); o.classList.add('open'); t.classList.add('open'); }
+        });
+        o.addEventListener('click', close);
+    })();
+    </script>
 </body>
 </html>
