@@ -7,116 +7,101 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-brand">
-            <a href="index.html">
-                <h1>The Pork Chop Chronicles</h1>
-                <p class="tagline">One Frenchman's Quest for the Perfect Baked Pork Chop Rice in Hong Kong</p>
-            </a>
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="header-overlay">
+            <div class="header-top">
+                <a href="index.html" class="site-logo">The Pork Chop Chronicles</a>
+                <p class="site-tagline">One Man's Quest for the Perfect Baked Pork Chop Rice in Hong Kong</p>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">My Story</a>
+                <a href="red-tea.html">Red Tea</a>
+                <a href="2cafe.html">2 Cafe</a>
+                <a href="cafe-de-coral.html">Cafe De Coral</a>
+                <a href="kowloon-restaurant.html">Kowloon Restaurant</a>
+            </nav>
         </div>
-        <div class="sidebar-nav">
-            <p class="nav-section-label">Navigate</p>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">My Story</a></li>
-            </ul>
-            <p class="nav-section-label">Reviews</p>
-            <ul>
-                <li><a href="red-tea.html">Red Tea</a></li>
-                <li><a href="2cafe.html">2 Cafe</a></li>
-                <li><a href="cafe-de-coral.html">Cafe De Coral</a></li>
-                <li><a href="kowloon-restaurant.html">Kowloon Restaurant</a></li>
-            </ul>
-        </div>
-        <div class="sidebar-footer">
-            <p>Made with <span class="heart">&hearts;</span> and far too much tomato sauce in Hong Kong</p>
-        </div>
-    </aside>
+    </header>
 
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-    </button>
-    <div class="overlay" id="overlay"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>A food blog infused with tomato sauce and love</h1>
+        <p>Every time I find a new place serving baked pork chop rice, I document it here. Some are fantastic. Some are... educational experiences. All of them are part of my Hong Kong story. Grab a cup of milk tea and join me on this delicious journey!</p>
+    </section>
 
-    <!-- Content Area -->
-    <div class="content-area">
-        <main>
-            <article>
-                <h2>Welcome to My Obsession</h2>
+    <!-- Main Content: Reviews Grid + Author Sidebar -->
+    <div class="home-content">
 
-                <p class="intro-highlight">"You moved to Hong Kong and your favourite dish is... baked pork chop rice?" - Every French person I've ever met</p>
+        <!-- Reviews Grid -->
+        <section class="reviews-section">
+            <h2>Latest Reviews</h2>
+            <div class="reviews-grid">
 
-                <p>Yes. Yes, it is. And before you judge me, let me tell you: I've been living in Hong Kong since 2010, and in that time, I've hiked more mountains than I can count, discovered hidden art galleries in industrial buildings, and eaten my way through some of the finest dim sum this city has to offer. But nothing, absolutely nothing, makes me feel more at home than sitting in a slightly too-bright cha chaan teng, plastic chopsticks in hand, staring down at a sizzling plate of Baked Pork Chop Tomato Rice.</p>
+                <a href="kowloon-restaurant.html" class="review-card">
+                    <div class="review-card-img-wrapper">
+                        <img src="images/kowloonrestaurant1.jpg" alt="Baked Pork Chop Rice at Kowloon Restaurant" class="review-card-img">
+                    </div>
+                    <div class="review-card-body">
+                        <span class="review-card-rating">6 / 10</span>
+                        <h3>Kowloon Restaurant</h3>
+                        <p class="review-card-meta">Tsim Sha Tsui &middot; HK$80</p>
+                        <p class="review-card-excerpt">A thick, generous pork chop with decent flavour, let down by barely-baked cheese and the unmistakable ghost of a microwave.</p>
+                    </div>
+                </a>
 
-                <p>The dish itself is beautifully simple: a breaded pork chop, lovingly placed atop a bed of rice, drowned in tomato sauce, buried under a blanket of melted cheese, and baked until the edges get that perfect char. It's comfort food. It's fusion cuisine before fusion cuisine was cool. It's Hong Kong on a plate.</p>
+                <a href="red-tea.html" class="review-card">
+                    <div class="review-card-img-wrapper">
+                        <img src="images/redtea1.jpg" alt="Baked Pork Chop Rice at Red Tea" class="review-card-img">
+                    </div>
+                    <div class="review-card-body">
+                        <span class="review-card-rating">8 / 10</span>
+                        <h3>Red Tea</h3>
+                        <p class="review-card-meta">Tsim Sha Tsui &middot; HK$79</p>
+                        <p class="review-card-excerpt">The pork chop here is absolutely massive. Charred cheese, rich tomato sauce, and a portion size that means business.</p>
+                    </div>
+                </a>
 
-                <p>This website is my ongoing love letter to this humble dish. Every time I find a new place serving it, I document it here. Some are fantastic. Some are... educational experiences. All of them are part of my Hong Kong story.</p>
+                <a href="2cafe.html" class="review-card">
+                    <div class="review-card-img-wrapper">
+                        <img src="images/2cafe.jpg" alt="Baked Pork Chop Rice at 2 Cafe" class="review-card-img">
+                    </div>
+                    <div class="review-card-body">
+                        <span class="review-card-rating">7 / 10</span>
+                        <h3>2 Cafe</h3>
+                        <p class="review-card-meta">Sheung Wan &middot; HK$70</p>
+                        <p class="review-card-excerpt">Hidden in Sheung Wan's old streets, this spot serves up a pork chop with gloriously burnt, crispy edges that changed everything.</p>
+                    </div>
+                </a>
 
-                <p>So grab a cup of milk tea (hot or iced, I won't judge), settle in, and join me on this deeply unnecessary but entirely delicious journey.</p>
-            </article>
+                <a href="cafe-de-coral.html" class="review-card">
+                    <div class="review-card-img-wrapper">
+                        <img src="images/cafedecoral1.jpg" alt="Baked Pork Chop Rice at Cafe De Coral" class="review-card-img">
+                    </div>
+                    <div class="review-card-body">
+                        <span class="review-card-rating">5 / 10</span>
+                        <h3>Cafe De Coral</h3>
+                        <p class="review-card-meta">Everywhere &middot; HK$48</p>
+                        <p class="review-card-excerpt">The McDonald's of cha chaan tengs. Affordable and reliable, but "gets the job done" feels like a missed opportunity.</p>
+                    </div>
+                </a>
 
-            <h2 class="section-title">Latest Reviews</h2>
-
-            <div class="review-card">
-                <img src="images/kowloonrestaurant1.jpg" alt="Baked Pork Chop Rice at Kowloon Restaurant">
-                <div class="review-card-content">
-                    <h3>Kowloon Restaurant - Tsim Sha Tsui</h3>
-                    <p class="meta">February 9, 2026 | Rating: 6/10 | HK$80</p>
-                    <p class="excerpt">A thick, generous pork chop with decent flavour, let down by barely-baked cheese and the unmistakable ghost of a microwave. The raw ingredients for greatness are there, but the execution remains a frustrating "almost"...</p>
-                    <a href="kowloon-restaurant.html" class="read-more">Read Full Review &rarr;</a>
-                </div>
             </div>
+        </section>
 
-            <div class="review-card">
-                <img src="images/redtea1.jpg" alt="Baked Pork Chop Rice at Red Tea">
-                <div class="review-card-content">
-                    <h3>Red Tea - Tsim Sha Tsui</h3>
-                    <p class="meta">February 4, 2026 | Rating: 8/10 | HK$79</p>
-                    <p class="excerpt">The pork chop here is absolutely massive, the kind that makes you question whether the pig was doing CrossFit. Charred cheese, rich tomato sauce, and a portion size that means business...</p>
-                    <a href="red-tea.html" class="read-more">Read Full Review &rarr;</a>
-                </div>
-            </div>
+        <!-- Author Sidebar -->
+        <aside class="author-sidebar">
+            <img src="images/cartoon.png" alt="The author of The Pork Chop Chronicles">
+            <p>Moving to a new city always brings a lot of &ldquo;first&rdquo; moments. The first time you get hopelessly lost and somehow find your way back (in my case, discovering that &ldquo;MTR&rdquo; was not, in fact, a type of tea). The&hellip;</p>
+            <a href="about.html" class="btn-primary">Read My Story</a>
+        </aside>
 
-            <div class="review-card">
-                <img src="images/2cafe.jpg" alt="Baked Pork Chop Rice at 2 Cafe">
-                <div class="review-card-content">
-                    <h3>2 Cafe - Sheung Wan</h3>
-                    <p class="meta">January 15, 2026 | Rating: 7/10 | HK$70</p>
-                    <p class="excerpt">Hidden in the maze of Sheung Wan's old streets, this unassuming spot serves up a pork chop with gloriously burnt, crispy edges that changed everything I thought I knew about this dish...</p>
-                    <a href="2cafe.html" class="read-more">Read Full Review &rarr;</a>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <img src="images/cafedecoral1.jpg" alt="Baked Pork Chop Rice at Cafe De Coral">
-                <div class="review-card-content">
-                    <h3>Cafe De Coral - Everywhere</h3>
-                    <p class="meta">March 3, 2025 | Rating: 5/10 | HK$48</p>
-                    <p class="excerpt">The McDonald's of cha chaan tengs. It's everywhere, it's affordable, and it gets the job done, but in a city with so many options, "gets the job done" feels like a missed opportunity...</p>
-                    <a href="cafe-de-coral.html" class="read-more">Read Full Review &rarr;</a>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 The Pork Chop Chronicles</p>
-        </footer>
     </div>
 
-    <script>
-    (function() {
-        var t = document.getElementById('menuToggle');
-        var s = document.getElementById('sidebar');
-        var o = document.getElementById('overlay');
-        function close() { s.classList.remove('open'); o.classList.remove('open'); t.classList.remove('open'); }
-        t.addEventListener('click', function() {
-            if (s.classList.contains('open')) { close(); }
-            else { s.classList.add('open'); o.classList.add('open'); t.classList.add('open'); }
-        });
-        o.addEventListener('click', close);
-    })();
-    </script>
+    <!-- Footer -->
+    <footer>
+        <p>Made with <span class="heart">&hearts;</span> and far too much tomato sauce in Hong Kong &middot; &copy; 2026 The Pork Chop Chronicles</p>
+    </footer>
 </body>
 </html>
